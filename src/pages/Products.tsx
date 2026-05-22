@@ -11,6 +11,14 @@ export default function Products() {
   const [selected, setSelected] = useState<(typeof products)[number] | null>(null);
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [quoteTarget, setQuoteTarget] = useState('');
+  const applyFallback = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+    const fallback = img.dataset.fallback;
+    if (fallback) {
+      img.onerror = null;
+      img.src = fallback;
+    }
+  };
 
   const filtered = useMemo(() => products.filter((p) => (category === 'all' || p.category === category) && p.name.toLowerCase().includes(query.toLowerCase())), [query, category]);
 
@@ -30,8 +38,18 @@ export default function Products() {
 
       <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {filtered.map((p) => (
-          <motion.article key={p.name} whileHover={{ y: -8, rotateX: 3, rotateY: -3 }} className="glass overflow-hidden rounded-2xl">
-            <img src={p.image} alt={p.name} className="h-56 w-full object-cover" />
+          <motion.article key={p.name} whileHover={{ y: -10, rotateX: 3, rotateY: -3 }} className="glass group overflow-hidden rounded-2xl border border-white/50 shadow-[0_18px_40px_rgba(10,20,35,0.16)] transition hover:shadow-[0_0_35px_rgba(230,20,20,0.22)]">
+            <div className="relative h-64 overflow-hidden">
+              <img
+                src={p.image}
+                data-fallback={p.fallbackImage}
+                onError={applyFallback}
+                loading="lazy"
+                alt={p.name}
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/72 via-black/22 to-transparent" />
+            </div>
             <div className="p-5">
               <h3 className="text-2xl font-semibold">{p.name}</h3>
               <p className="mt-2 text-sm text-[var(--muted)]">{p.description}</p>
@@ -47,7 +65,14 @@ export default function Products() {
       </div>
 
       <Modal open={!!selected} onClose={() => setSelected(null)} title={selected?.name || ''}>
-        <img src={selected?.image} alt={selected?.name || ''} className="h-56 w-full rounded-xl object-cover" />
+        <img
+          src={selected?.image}
+          data-fallback={selected?.fallbackImage}
+          onError={applyFallback}
+          loading="lazy"
+          alt={selected?.name || ''}
+          className="h-64 w-full rounded-xl object-cover"
+        />
         <p className="mt-3">{selected?.description}</p>
       </Modal>
 

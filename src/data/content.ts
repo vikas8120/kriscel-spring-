@@ -8,13 +8,23 @@
 
 export const trustBadges = ['ISO Quality', '28+ Years', '42M+ Springs', '18+ Industries'];
 
+const productImages = {
+  compression: '/images/products/compression_springs.jpg',
+  extension: '/images/products/extension_springs.jpg',
+  torsion: '/images/products/torsion_springs.jpg',
+  wireforms: '/images/products/wire_forms.jpg',
+  stamping: '/images/products/precision_stamping_parts.jpg',
+  assembly: '/images/products/assembly_components.jpg',
+};
+
 export const products = [
   {
     name: 'Compression Springs',
     material: 'Chrome Silicon / SS',
     application: 'Suspension, valves',
     description: 'High-load fatigue resistant springs for dynamic force control.',
-    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80',
+    image: productImages.compression,
+    fallbackImage: '/images/products/compression-springs.svg',
     category: 'dynamic',
   },
   {
@@ -22,7 +32,8 @@ export const products = [
     material: 'Music Wire / Inconel',
     application: 'Return mechanisms',
     description: 'Precision extension response for cyclical industrial operations.',
-    image: 'https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?auto=format&fit=crop&w=1200&q=80',
+    image: productImages.extension,
+    fallbackImage: '/images/products/extension-springs.svg',
     category: 'dynamic',
   },
   {
@@ -30,7 +41,8 @@ export const products = [
     material: 'Carbon Steel / SS304',
     application: 'Rotary systems',
     description: 'Torque-stable springs engineered for rotational duty cycles.',
-    image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=1200&q=80',
+    image: productImages.torsion,
+    fallbackImage: '/images/products/torsion-springs.svg',
     category: 'rotary',
   },
   {
@@ -38,7 +50,8 @@ export const products = [
     material: 'Spring Steel / Brass',
     application: 'Custom fixtures',
     description: 'Complex wire geometries bent for precision assemblies.',
-    image: 'https://images.unsplash.com/photo-1581092446327-9f89d2f6f2b1?auto=format&fit=crop&w=1200&q=80',
+    image: productImages.wireforms,
+    fallbackImage: '/images/products/wire-forms.svg',
     category: 'custom',
   },
   {
@@ -46,7 +59,8 @@ export const products = [
     material: 'Hardened Steel',
     application: 'Automotive systems',
     description: 'Micron-level stamped components for durable high-cycle systems.',
-    image: 'https://images.unsplash.com/photo-1664575600850-c4b712e6e2bf?auto=format&fit=crop&w=1200&q=80',
+    image: productImages.stamping,
+    fallbackImage: '/images/products/precision-stamping-parts.svg',
     category: 'custom',
   },
   {
@@ -54,7 +68,8 @@ export const products = [
     material: 'Multi-material',
     application: 'OEM integration',
     description: 'Integrated spring assemblies ready for line-fit manufacturing.',
-    image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&w=1200&q=80',
+    image: productImages.assembly,
+    fallbackImage: '/images/products/assembly-components.svg',
     category: 'assembly',
   },
 ];
