@@ -1,0 +1,38 @@
+<svg width='640' height='420' viewBox='0 0 640 420' fill='none' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='640' y2='420' gradientUnits='userSpaceOnUse'>
+      <stop stop-color='#0C0F14'/>
+      <stop offset='1' stop-color='#1B212C'/>
+    </linearGradient>
+    <linearGradient id='metal' x1='130' y1='30' x2='500' y2='380' gradientUnits='userSpaceOnUse'>
+      <stop stop-color='#F4F7FB'/>
+      <stop offset='0.28' stop-color='#C6CDD8'/>
+      <stop offset='0.58' stop-color='#7D8796'/>
+      <stop offset='1' stop-color='#D9E0EA'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(496 76) rotate(122) scale(230 300)'>
+      <stop stop-color='#d4312d'/>
+      <stop offset='1' stop-color='#d4312d' stop-opacity='0'/>
+    </radialGradient>
+    <filter id='soft' x='0' y='0' width='640' height='420' filterUnits='userSpaceOnUse'>
+      <feGaussianBlur stdDeviation='26'/>
+    </filter>
+  </defs>
+  <rect width='640' height='420' rx='28' fill='url(#bg)'/>
+  <ellipse cx='470' cy='96' rx='168' ry='124' fill='url(#glow)' filter='url(#soft)'/>
+  <g stroke='url(#metal)' stroke-width='10.5' stroke-linecap='round'>
+    <path d='M120 122C178 82 224 82 284 122C344 162 392 162 450 122C508 82 556 82 612 122'/>
+    <path d='M120 148C178 108 224 108 284 148C344 188 392 188 450 148C508 108 556 108 612 148'/>
+    <path d='M120 174C178 134 224 134 284 174C344 214 392 214 450 174C508 134 556 134 612 174'/>
+    <path d='M120 200C178 160 224 160 284 200C344 240 392 240 450 200C508 160 556 160 612 200'/>
+    <path d='M120 226C178 186 224 186 284 226C344 266 392 266 450 226C508 186 556 186 612 226'/>
+    <path d='M120 252C178 212 224 212 284 252C344 292 392 292 450 252C508 212 556 212 612 252'/>
+    <path d='M120 278C178 238 224 238 284 278C344 318 392 318 450 278C508 238 556 238 612 278'/>
+  </g>
+  <g stroke='#d4312d' stroke-opacity='0.85' stroke-width='2'>
+    <path d='M92 92L92 308'/>
+    <path d='M110 92L110 308'/>
+  </g>
+  <rect x='30' y='302' width='580' height='84' rx='16' fill='rgba(255,255,255,0.06)'/>
+  <text x='54' y='350' fill='#EAF0F8' font-size='28' font-family='Segoe UI, Arial, sans-serif' letter-spacing='1.2'>PREMIUM INDUSTRIAL SPRING</text>
+</svg>
