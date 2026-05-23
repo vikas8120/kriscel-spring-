@@ -40,7 +40,7 @@ export default function App() {
     <ToastContext.Provider value={setToast}>
       <ScrollReset />
       <Navbar />
-      <main className="pt-24">
+      <main className="pt-56 lg:pt-64">
         <Routes>
           <Route path="/" element={<PageWrap><Home /></PageWrap>} />
           <Route path="/about" element={<PageWrap><About /></PageWrap>} />
@@ -57,4 +57,6 @@ export default function App() {
     </ToastContext.Provider>
   );
 }
+
+
 

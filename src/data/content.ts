@@ -75,10 +75,10 @@ export const products = [
 ];
 
 export const manufacturing = [
-  { title: 'Smart Factory Floor', image: 'https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1400&q=80', copy: 'Automated production cells with digital traceability and real-time throughput monitoring.' },
-  { title: 'CNC & Coiling Cells', image: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1400&q=80', copy: 'High-speed CNC coil forming lines calibrated for tolerance-critical spring profiles.' },
-  { title: 'Heat Treatment', image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1400&q=80', copy: 'Controlled thermal cycles to optimize elasticity, tensile strength, and fatigue life.' },
-  { title: 'Testing Lab', image: 'https://images.unsplash.com/photo-1581093458791-9d15482442f6?auto=format&fit=crop&w=1400&q=80', copy: 'Load, endurance, and dimensional validation with industrial metrology systems.' },
+  { title: 'Smart Factory Floor', image: '/images/manufacturing/smart-factory-floor.jpg', copy: 'Automated production cells with digital traceability and real-time throughput monitoring.' },
+  { title: 'CNC & Coiling Cells', image: '/images/manufacturing/cnc-coiling-cells.jpg', copy: 'High-speed CNC coil forming lines calibrated for tolerance-critical spring profiles.' },
+  { title: 'Heat Treatment', image: '/images/manufacturing/heat-treatment.jpg', copy: 'Controlled thermal cycles to optimize elasticity, tensile strength, and fatigue life.' },
+  { title: 'Testing Lab', image: '/images/manufacturing/testing-lab.jpg', copy: 'Load, endurance, and dimensional validation with industrial metrology systems.' },
   { title: 'Packaging & Dispatch', image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=80', copy: 'Protective packaging workflows with batch traceability and export-grade handling.' },
 ];
 
@@ -86,9 +86,9 @@ export const industries = [
   { name: 'Railway', image: 'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1400&q=80' },
   { name: 'Wind Turbine', image: 'https://images.unsplash.com/photo-1467533003447-e295ff1b0435?auto=format&fit=crop&w=1400&q=80' },
   { name: 'Automotive', image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80' },
-  { name: 'Heavy Machinery', image: 'https://images.unsplash.com/photo-1590502593747-42a996133562?auto=format&fit=crop&w=1400&q=80' },
-  { name: 'Agriculture', image: 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1400&q=80' },
-  { name: 'Electrical Switchgear', image: 'https://images.unsplash.com/photo-1581092160607-ee22731f7f6e?auto=format&fit=crop&w=1400&q=80' },
+  { name: 'Heavy Machinery', image: '/images/industries/heavy-machinery.png' },
+  { name: 'Agriculture', image: '/images/industries/agriculture.jpg' },
+  { name: 'Electrical Switchgear', image: '/images/industries/electrical-switchgear.jpg' },
   { name: 'Textiles', image: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80' },
   { name: 'Commercial Vehicles', image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1400&q=80' },
 ];
@@ -109,4 +109,10 @@ export const testimonials = [
 ];
 
 export const clientLogos = ['NEXA MOTION', 'RAILAXIS', 'TURBOGRID', 'ELECTRA CORE', 'AGROFORGE'];
+
+
+
+
+
+
 
